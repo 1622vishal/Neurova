@@ -12,6 +12,10 @@ import CompanyLogos from "./CompanyLogos";
 const Hero = () => {
   const parallaxRef = useRef(null);
 
+  const handleGetStartedClick = () => {
+    window.open("https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/27/18/20241227183550-V4ZAOGRZ.json", "_blank");
+  };
+
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
@@ -39,7 +43,7 @@ const Hero = () => {
             Unleash the power of AI within Neurova. Upgrade your productivity
             with Neurova, the open AI chat app.
           </p>
-          <Button href="/pricing" white>
+          <Button onClick={handleGetStartedClick} white>
             Get started
           </Button>
         </div>
